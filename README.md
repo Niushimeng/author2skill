@@ -1,12 +1,18 @@
 # author2skill
 
-一个 Claude Code 元技能（meta-skill），用于分析小说作家的文本样本，提取其写作风格DNA，生成可复用的仿写技能。
+一个元技能（meta-skill），用于分析小说作家的文本样本，提取其写作风格 DNA，生成可复用的仿写技能。兼容 Agent Skills Standard，可在任意支持 skills 的 agent runtime（Claude Code / Codex / Cursor / OpenClaw / Hermes / Gemini CLI / OpenCode 等）调用。
 
 属于三件套工具之一：**author2skill**（小说风格）| **book2skill**（方法论提炼）| **nuwa-skill**（思维风格建模）
 
 ## 快速开始
 
-在 Claude Code 中运行：
+将本目录放置到运行环境的 skills 目录后，触发以下任一关键词即可调用：
+
+```
+蒸馏风格 / 风格蒸馏 / 分析作者风格 / 做一个仿写 skill / author style distillation
+```
+
+也支持直接调用 skill 名（语法依 runtime 而定）：
 
 ```
 /author2skill
